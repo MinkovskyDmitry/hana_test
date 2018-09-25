@@ -1,0 +1,11 @@
+table.schemaName = "DEV";
+table.tableType = COLUMNSTORE;
+table.columns =
+ [
+    {name = "ProductID";   sqlType = INTEGER;  nullable = false;},
+	{name = "ProductName"; sqlType = NVARCHAR; length = 100; nullable = false;},
+	{name = "Price";       sqlType = NVARCHAR; length = 150; nullable = false;},
+	{name = "CompanyID";   sqlType = DOUBLE;  nullable = false; },
+	{name = "Category";    sqlType = NVARCHAR; length = 50; }
+ ];
+table.primaryKey.pkcolumns = ["ProductID"];

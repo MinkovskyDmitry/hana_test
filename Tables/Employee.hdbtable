@@ -1,0 +1,9 @@
+table.schemaName = "DEV"; 
+table.tableType = COLUMNSTORE;
+table.columns =
+ [
+    {name = "EmployeeID";   sqlType = INTEGER; nullable = false;},
+	{name = "FIO"; sqlType = NVARCHAR; length = 100; nullable = false;},
+	{name = "Birthday"; sqlType = DATE;}
+ ];
+table.primaryKey.pkcolumns = ["EmployeeID"];
