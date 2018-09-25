@@ -1,0 +1,5 @@
+schema = "DEV"; 
+start_with = 1;
+maxvalue = 1000000000;
+minvalue= 1; 
+depends_on_table = "dev.Magaz::Orders";

@@ -1,0 +1,11 @@
+table.schemaName = "DEV";
+table.tableType = COLUMNSTORE;
+table.columns =
+ [
+    {name = "OrderID";    sqlType = INTEGER;  nullable = false;},
+    {name = "EmployeeID"; sqlType = INTEGER;  nullable = false;},
+    {name = "OrderDate";  sqlType = DATE;     nullable = false;},
+    {name = "OrderTime";  sqlType = TIME;  nullable = false;},
+    {name = "ShopID";     sqlType = INTEGER;  nullable = false;}
+ ];
+table.primaryKey.pkcolumns = ["OrderID"];
